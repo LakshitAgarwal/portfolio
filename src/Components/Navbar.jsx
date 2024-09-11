@@ -5,7 +5,7 @@ import { GoDownload } from "react-icons/go";
 const Navbar = () => {
   return (
     <div className="pt-8">
-      <div className="poppins-regular backdrop-blur-0 px-8 py-3 bg-white/5 shadow-2xl shadow-purple-800 text-white flex items-center w-[85%] mx-auto justify-between rounded-full">
+      <div className="poppins-regular backdrop-blur-0 px-8 py-3 bg-white/5 text-white flex items-center w-[85%] mx-auto justify-between rounded-full">
         <FaCode className="text-5xl" />
         <div className="flex items-center gap-10 text-lg font-light">
           <h1 className="cursor-pointer hover:text-purple-400 transition duration-300">
