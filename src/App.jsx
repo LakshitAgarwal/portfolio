@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
+import Projects from "./Components/Projects";
 import StarsCanvas from "./Components/Stars";
 import TechStacks from "./Components/TechStacks";
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <TechStacks />
+      <Projects />
       <StarsCanvas />
     </div>
   );
