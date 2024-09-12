@@ -82,8 +82,12 @@ const Hero = () => {
         </div>
       </div>
       {/* scrol wheel */}
-      <div className="w-[13%] mx-auto mt-10 cursor-pointer">
-        <img src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif" alt="" />
+      <div className="w-[13%] mx-auto mt-10 ">
+        <img
+          src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
+          className="cursor-pointer"
+          alt=""
+        />
       </div>
     </>
   );

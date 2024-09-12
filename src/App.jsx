@@ -1,6 +1,7 @@
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import StarsCanvas from "./Components/Stars";
+import TechStacks from "./Components/TechStacks";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* Moving StarsCanvas below Navbar for better layering */}
       <Navbar />
       <Hero />
+      <TechStacks />
       <StarsCanvas />
     </div>
   );
