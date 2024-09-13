@@ -4,6 +4,7 @@ import Projects from "./Components/Projects";
 import StarsCanvas from "./Components/Stars";
 import TechStacks from "./Components/TechStacks";
 import About from "./Components/About";
+import ContactForm from "./Components/ContactForm";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TechStacks />
       <Projects />
       <About />
+      <ContactForm />
       <StarsCanvas />
     </div>
   );
