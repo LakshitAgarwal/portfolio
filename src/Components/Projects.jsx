@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="mt-4 pb-28">
+    <div className="pt-24 mt-5 pb-20">
       <div className="text-white w-fit mx-auto text-5xl">
         <span className="josefin-sans-light">My </span>
         <span className="josefin-sans-font">Projects</span>

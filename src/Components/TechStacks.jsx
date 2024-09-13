@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const variants = (duration) => ({
@@ -14,9 +14,9 @@ const variants = (duration) => ({
   },
 });
 
-const TechStacks = forwardRef((props, ref) => {
+const TechStacks = () => {
   return (
-    <div className="py-28 w-fit mx-auto" ref={ref}>
+    <div className="mt-16 pt-12 w-fit mx-auto">
       <h1 className="text-5xl font-bold text-center mb-20 text-white josefin-sans-font">
         Technologies
       </h1>
@@ -100,6 +100,6 @@ const TechStacks = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default TechStacks;

@@ -11,7 +11,7 @@ import { motion } from "framer-motion"; // Import framer-motion
 
 const About = () => {
   return (
-    <div>
+    <div className="pt-10">
       <div className="text-white w-fit mx-auto text-5xl">
         <span className="josefin-sans-light">About </span>
         <span className="josefin-sans-font">Me</span>

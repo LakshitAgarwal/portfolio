@@ -1,18 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import { BsInstagram } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
 import { motion } from "framer-motion";
-import TechStacks from './TechStacks'; // Ensure the correct import path
 
 const Hero = () => {
-  const techStacksRef = useRef(null);
-
-  const scrollToTechStacks = () => {
-    techStacksRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <>
       <div className="flex w-[90%] items-center justify-between">
@@ -47,7 +40,12 @@ const Hero = () => {
                 className="text-white text-2xl border-b-2 w-fit border-purple-600"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.5, type: "spring", stiffness: 150 }}
+                transition={{
+                  delay: 0.2,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150,
+                }}
               >
                 I'm a
               </motion.h1>
@@ -55,7 +53,12 @@ const Hero = () => {
                 className="text-white text-5xl mt-5"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.5, type: "spring", stiffness: 150 }}
+                transition={{
+                  delay: 0.4,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150,
+                }}
               >
                 Front-end <span className="text-purple-200">Developer</span>,
               </motion.h1>
@@ -63,7 +66,12 @@ const Hero = () => {
                 className="text-white josefin-sans-font text-lg mt-4 w-3/4 tracking-wide"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.5, type: "spring", stiffness: 150 }}
+                transition={{
+                  delay: 0.6,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150,
+                }}
               >
                 proficient in crafting dynamic and visually captivating
                 websites.
@@ -72,8 +80,12 @@ const Hero = () => {
                 className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.5, type: "spring", stiffness: 150 }}
-                onClick={scrollToTechStacks} // Added onClick handler
+                transition={{
+                  delay: 0.8,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150,
+                }}
               >
                 <GoDownload className="text-white" />
                 <span className="text-white josefin-sans-font mt-1">
@@ -133,14 +145,14 @@ const Hero = () => {
       </div>
       {/* scroll wheel */}
       <div className="w-[13%] mx-auto mt-10 ">
-        <img
-          src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
-          className="cursor-pointer"
-          alt=""
-          onClick={scrollToTechStacks} // Added onClick handler
-        />
+        <a href="#skills">
+          <img
+            src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
+            className="cursor-pointer"
+            alt=""
+          />
+        </a>
       </div>
-      <TechStacks ref={techStacksRef} /> {/* TechStacks component with ref */}
     </>
   );
 };
