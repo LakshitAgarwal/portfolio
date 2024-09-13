@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsInstagram } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
+import { motion } from "framer-motion";
+import TechStacks from './TechStacks'; // Ensure the correct import path
 
 const Hero = () => {
+  const techStacksRef = useRef(null);
+
+  const scrollToTechStacks = () => {
+    techStacksRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <div className="flex w-[90%] items-center justify-between">
@@ -19,6 +27,7 @@ const Hero = () => {
                 <span className="text-[#8E3DDE] relative z-10">
                   Lakshit Agarwal
                 </span>
+
                 <svg
                   className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-auto"
                   viewBox="0 0 490 175"
@@ -32,63 +41,106 @@ const Hero = () => {
                 </svg>
               </span>
             </h1>
+            {/* about me */}
             <div className="mt-16 preahvihear-regular">
-              <h1 className="text-white text-2xl border-b-2 w-fit border-purple-600">
+              <motion.h1
+                className="text-white text-2xl border-b-2 w-fit border-purple-600"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5, type: "spring", stiffness: 150 }}
+              >
                 I'm a
-              </h1>
-              <h1 className="text-white text-5xl mt-5">
+              </motion.h1>
+              <motion.h1
+                className="text-white text-5xl mt-5"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.5, type: "spring", stiffness: 150 }}
+              >
                 Front-end <span className="text-purple-200">Developer</span>,
-              </h1>
-              <h1 className="text-white josefin-sans-font text-lg mt-4 w-3/4 tracking-wide">
+              </motion.h1>
+              <motion.h1
+                className="text-white josefin-sans-font text-lg mt-4 w-3/4 tracking-wide"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.5, type: "spring", stiffness: 150 }}
+              >
                 proficient in crafting dynamic and visually captivating
                 websites.
-              </h1>
-              <button>
-                <div className="rounded-full flex items-center py-2 px-5 mt-8 gap-2 btn-grad ">
-                  <GoDownload className="text-white" />
-                  <span className="text-white josefin-sans-font mt-1">
-                    Download CV
-                  </span>
-                </div>
-              </button>
+              </motion.h1>
+              <motion.div
+                className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.5, type: "spring", stiffness: 150 }}
+                onClick={scrollToTechStacks} // Added onClick handler
+              >
+                <GoDownload className="text-white" />
+                <span className="text-white josefin-sans-font mt-1">
+                  Download CV
+                </span>
+              </motion.div>
             </div>
           </div>
         </div>
         {/* socials */}
         <div className="text-white text-3xl flex flex-col gap-12">
-          <a href="https://github.com/LakshitAgarwal" target="_blank">
+          <motion.a
+            href="https://github.com/LakshitAgarwal"
+            target="_blank"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, stiffness: 300 }}
+          >
             <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
               <FaGithub className="text-black" />
             </div>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/lakshit-agarwal-6082b9216/"
             target="_blank"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, stiffness: 300 }}
           >
             <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
               <FaLinkedin className=" text-blue-400 " />
             </div>
-          </a>
-          <a href="https://x.com/lakshitagarwal7" target="_blank">
+          </motion.a>
+          <motion.a
+            href="https://x.com/lakshitagarwal7"
+            target="_blank"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, stiffness: 300 }}
+          >
             <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
               <FaSquareXTwitter className="text-black" />
             </div>
-          </a>
-          <a href="https://www.instagram.com/lakshit.7811/" target="_blank">
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/lakshit.7811/"
+            target="_blank"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, stiffness: 300 }}
+          >
             <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
               <BsInstagram className="text-pink-400" />
             </div>
-          </a>
+          </motion.a>
         </div>
       </div>
-      {/* scrol wheel */}
+      {/* scroll wheel */}
       <div className="w-[13%] mx-auto mt-10 ">
         <img
           src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
           className="cursor-pointer"
           alt=""
+          onClick={scrollToTechStacks} // Added onClick handler
         />
       </div>
+      <TechStacks ref={techStacksRef} /> {/* TechStacks component with ref */}
     </>
   );
 };

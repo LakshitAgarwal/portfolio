@@ -70,8 +70,9 @@ const ContactPage = () => {
           {/* Left Side */}
           <div className="w-full lg:w-1/2">
             <motion.h1
+              viewport={{ once: true }}
               initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="text-xl md:text-3xl my-4 font-bold text-purple-50"
             >
@@ -80,8 +81,9 @@ const ContactPage = () => {
             </motion.h1>
             <motion.p
               initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
               className="text-gray-300 my-6 mb-10"
             >
               Have questions or need assistance? I am here to help. Reach out to
@@ -89,7 +91,8 @@ const ContactPage = () => {
             </motion.p>
             <motion.div
               initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
               className="flex flex-col lg:flex-row"
             >
@@ -116,7 +119,8 @@ const ContactPage = () => {
             </motion.div>
             <motion.div
               initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 1.1 }}
               className="flex flex-col lg:flex-row mt-5"
             >
@@ -127,9 +131,7 @@ const ContactPage = () => {
                 <p className="text-lg text-gray-300 my-2 mt-4">
                   +91-9511517845
                 </p>
-                <p className="text-lg text-gray-300 ">
-                  lakshitcollege@gmail.com
-                </p>
+                <p className="text-lg text-gray-300 ">lakshit7811@gmail.com</p>
               </div>
               <div className="md:mx-auto">
                 <p className="text-2xl dm-sans-bold w-fit text-purple-600 mb-1 border-b-[3px] border-purple-500">
@@ -167,8 +169,9 @@ const ContactPage = () => {
           </div>
           {/* Form */}
           <motion.div
+            viewport={{ once: true }}
             initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="w-full lg:w-1/2 my-auto"
           >
@@ -244,12 +247,14 @@ const ContactPage = () => {
 
               <button
                 type="submit"
-                className="w-full bg-purple-800 text-white text-lg font-semibold px-5 py-2 rounded-lg hover:bg-purple-900 transition-all ease-in-out duration-300"
+                className="w-full btn-grad bg-purple-800 text-white text-lg font-semibold px-5 py-2 rounded-lg hover:bg-purple-900 transition-all ease-in-out duration-300"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
               {messageSent && (
-                <p className="text-green-500 mt-3">Message sent successfully!</p>
+                <p className="text-green-500 mt-3">
+                  Message sent successfully!
+                </p>
               )}
             </form>
           </motion.div>

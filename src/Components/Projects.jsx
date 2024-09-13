@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { IoGlobeOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -10,7 +11,13 @@ const Projects = () => {
         <span className="josefin-sans-font">Projects</span>
       </div>
       <div>
-        <div className="relative flex items-center justify-center mt-20 space-x-16">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="relative flex items-center justify-center mt-20 space-x-16"
+        >
           {/* content */}
           <div className="text-white w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
@@ -48,8 +55,14 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16"
+        >
           {/* content */}
           <div className="text-white w-[40%] text-right">
             <h1 className="text-sm text-purple-600 font-semibold">
@@ -90,8 +103,14 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className="relative flex items-center justify-center mt-20 space-x-16">
+        </motion.div>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="relative flex items-center justify-center mt-20 space-x-16"
+        >
           {/* content */}
           <div className="text-white w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
@@ -132,8 +151,14 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16"
+        >
           {/* content */}
           <div className="text-white w-[40%] text-right">
             <h1 className="text-sm text-purple-600 font-semibold">
@@ -171,7 +196,7 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

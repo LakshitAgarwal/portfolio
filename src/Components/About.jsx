@@ -7,6 +7,7 @@ import { EffectCards, Autoplay } from "swiper/modules"; // Import Autoplay
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
+import { motion } from "framer-motion"; // Import framer-motion
 
 const About = () => {
   return (
@@ -17,7 +18,15 @@ const About = () => {
       </div>
       <div className="w-[80%] mx-auto flex py-10">
         {/* content */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          whileInView={{ opacity: 1, x: 0 }} // Animate in when in view
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+          }} // Smooth animation
+        >
           <div className="m-8 text-lg">
             <p className="text-white/80 w-[90%]">
               I am a passionate frontend developer and UI/UX designer, currently
@@ -58,16 +67,25 @@ const About = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* images */}
-        <div className="shadow-2xl shadow-purple-800">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }} // Start off-screen to the right
+          whileInView={{ opacity: 1, x: 0 }} // Animate in when in view
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+          }} // Smooth animation
+          className="shadow-2xl shadow-purple-800"
+        >
           <Swiper
             effect={"cards"}
             grabCursor={true}
             loop={true} // Enable loop for continuous slides
             autoplay={{
-              delay: 4000, // Set autoplay delay (3 seconds)
+              delay: 4000, // Set autoplay delay (4 seconds)
               disableOnInteraction: false, // Keep autoplay running even when interacted with
             }}
             modules={[EffectCards, Autoplay]} // Add Autoplay module here
@@ -95,7 +113,7 @@ const About = () => {
               />
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

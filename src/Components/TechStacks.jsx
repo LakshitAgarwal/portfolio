@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
 
 const variants = (duration) => ({
   initial: { y: -10 },
   animate: {
-    y: [5, -5],
+    y: [8, -8],
     transition: {
       duration: duration, // duration comes from the argument
       ease: "linear",
@@ -14,10 +14,12 @@ const variants = (duration) => ({
   },
 });
 
-const TechStacks = () => {
+const TechStacks = forwardRef((props, ref) => {
   return (
-    <div className="py-28 w-fit mx-auto">
-      <h1 className="text-5xl font-bold text-center mb-20 text-white josefin-sans-font">Technologies</h1>
+    <div className="py-28 w-fit mx-auto" ref={ref}>
+      <h1 className="text-5xl font-bold text-center mb-20 text-white josefin-sans-font">
+        Technologies
+      </h1>
 
       <div className="flex gap-7 mb-8 w-fit mx-auto">
         <motion.div
@@ -98,6 +100,6 @@ const TechStacks = () => {
       </div>
     </div>
   );
-};
+});
 
 export default TechStacks;
