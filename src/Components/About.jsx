@@ -16,7 +16,7 @@ const About = () => {
         <span className="josefin-sans-light">About </span>
         <span className="josefin-sans-font">Me</span>
       </div>
-      <div className="w-[80%] mx-auto flex py-10">
+      <div className="md:w-[80%] mx-auto flex flex-col-reverse md:flex-row py-10">
         {/* content */}
         <motion.div
           initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
@@ -27,8 +27,8 @@ const About = () => {
             delay: 0.2,
           }} // Smooth animation
         >
-          <div className="m-8 text-lg">
-            <p className="text-white/80 w-[90%]">
+          <div className="m-8 md:text-lg">
+            <p className="text-white/80 md:w-[90%]">
               I am a passionate frontend developer and UI/UX designer, currently
               a B.Tech third-year student, with a knack for building visually
               appealing and user-friendly web applications. I enjoy creating
@@ -39,6 +39,7 @@ const About = () => {
               solutions that leave a lasting impact.
             </p>
           </div>
+          {/* socials */}
           <div className="ml-7">
             <div className="text-white text-3xl flex gap-10">
               <a
@@ -78,7 +79,7 @@ const About = () => {
             duration: 0.5,
             delay: 0.2,
           }} // Smooth animation
-          className="shadow-2xl shadow-purple-800"
+          className="md:shadow-2xl md:shadow-purple-800"
         >
           <Swiper
             effect={"cards"}
@@ -89,27 +90,27 @@ const About = () => {
               disableOnInteraction: false, // Keep autoplay running even when interacted with
             }}
             modules={[EffectCards, Autoplay]} // Add Autoplay module here
-            className="mySwiper"
+            className="mySwiper bg-transparent"
           >
             <SwiperSlide>
               <img
                 src="/me3.JPG"
                 alt="Your Photo 1"
-                className="w-full h-full object-cover"
+                className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/me2.jpg"
                 alt="Your Photo 2"
-                className="w-full h-full object-cover"
+                className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/me1.JPG"
                 alt="Your Photo 3"
-                className="w-full h-full object-cover"
+                className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
             </SwiperSlide>
           </Swiper>

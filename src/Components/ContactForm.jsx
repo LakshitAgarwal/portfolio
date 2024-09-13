@@ -61,7 +61,7 @@ const ContactPage = () => {
 
   return (
     <div className="py-20">
-      <div className="text-white w-fit mx-auto text-5xl my-5 mb-20">
+      <div className="text-white w-fit mx-auto text-5xl md:my-5 md:mb-20">
         <span className="josefin-sans-light">Contact </span>
         <span className="josefin-sans-font">Me</span>
       </div>
@@ -94,7 +94,7 @@ const ContactPage = () => {
               viewport={{ once: true }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
-              className="flex flex-col lg:flex-row"
+              className="md:flex md:flex-col lg:flex-row"
             >
               <div className="mb-6 lg:mb-0 lg:mr-8">
                 <h1 className="text-2xl dm-sans-bold w-fit text-purple-600 mb-1 border-b-[3px] border-purple-500">

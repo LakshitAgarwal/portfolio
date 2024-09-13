@@ -16,10 +16,10 @@ const Projects = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative flex items-center justify-center mt-20 space-x-16"
+          className="relative flex flex-col-reverse md:flex-row items-center justify-center md:mt-20 mt-16 md:space-x-16"
         >
           {/* content */}
-          <div className="text-white w-[40%]">
+          <div className="text-white w-[85%] md:w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
           </div>
           {/* img */}
-          <div className="w-[30%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+          <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 md:relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a href="https://github.com/LakshitAgarwal/CineBot" target="_blank">
               <img
                 src="/ssMovie.png"
@@ -61,10 +61,10 @@ const Projects = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
-          className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16"
+          className="relative flex md:flex-row-reverse flex-col-reverse items-center space-x-reverse justify-center mt-20 md:gap-16 "
         >
           {/* content */}
-          <div className="text-white w-[40%] text-right">
+          <div className="text-white w-[85%] md:w-[40%] md:text-right">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
@@ -78,7 +78,7 @@ const Projects = () => {
               to find and access valuable educational resources across various
               topics.
             </p>
-            <div className="flex gap-6 mt-9 text-3xl justify-end">
+            <div className="flex gap-6 mt-9 text-3xl md:justify-end">
               <a
                 href="https://github.com/LakshitAgarwal/Freedemy"
                 target="_blank"
@@ -91,7 +91,7 @@ const Projects = () => {
             </div>
           </div>
           {/* img */}
-          <div className="w-[30%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+          <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
               href="https://github.com/LakshitAgarwal/Freedemy"
               target="_blank"
@@ -109,10 +109,10 @@ const Projects = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
-          className="relative flex items-center justify-center mt-20 space-x-16"
+          className="relative flex flex-col-reverse md:flex-row items-center justify-center mt-20 md:space-x-16"
         >
           {/* content */}
-          <div className="text-white w-[40%]">
+          <div className="text-white w-[85%] mt-10 md:w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
@@ -139,7 +139,7 @@ const Projects = () => {
             </div>
           </div>
           {/* img */}
-          <div className="w-[30%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+          <div className="md:w-[30%] w-[85%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
               href="https://github.com/LakshitAgarwal/gym-react-app"
               target="_blank"
@@ -157,10 +157,10 @@ const Projects = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
-          className="relative flex flex-row-reverse items-center space-x-reverse justify-center mt-20 space-x-16"
+          className="relative flex md:flex-row-reverse flex-col-reverse items-center space-x-reverse justify-center mt-20 md:gap-16"
         >
           {/* content */}
-          <div className="text-white w-[40%] text-right">
+          <div className="text-white w-[85%] md:w-[40%] md:text-right">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
@@ -174,7 +174,7 @@ const Projects = () => {
               that users always have up-to-date information on available
               restaurants, menus, and promotions.
             </p>
-            <div className="flex gap-6 mt-9 text-3xl justify-end">
+            <div className="flex gap-6 mt-9 text-3xl md:justify-end">
               <a
                 href="https://github.com/LakshitAgarwal/Food-App"
                 target="_blank"
@@ -184,7 +184,7 @@ const Projects = () => {
             </div>
           </div>
           {/* img */}
-          <div className="w-[30%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+          <div className="md:w-[30%] w-[90%] mb-10 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
               href="https://github.com/LakshitAgarwal/Food-App"
               target="_blank"
