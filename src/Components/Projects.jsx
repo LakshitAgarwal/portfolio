@@ -16,7 +16,9 @@ const Projects = () => {
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
-            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">CineBot</h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              CineBot
+            </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
               CineBot is a web application designed to provide users with
               personalized movie recommendations, a seamless browsing
@@ -53,7 +55,9 @@ const Projects = () => {
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
-            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">Freedemy</h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              Freedemy
+            </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
               Freedemy is a unique platform that curates and showcases free
               courses from Udemy, a leading online learning site. It offers
@@ -68,7 +72,7 @@ const Projects = () => {
               >
                 <FaGithub />
               </a>
-              <a href="">
+              <a href="https://freedemy.onrender.com/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
@@ -93,7 +97,9 @@ const Projects = () => {
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
-            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">Fitness Life Gym</h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              Fitness Life Gym
+            </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
               This is a sleek and responsive website developed using React for
               dynamic functionality and styled with Tailwind CSS for a clean and
@@ -133,7 +139,9 @@ const Projects = () => {
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
-            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">Food App</h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              Food App
+            </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
               A Food App Frontend, a React-based web application that provides
               users with a seamless experience to browse food from various
