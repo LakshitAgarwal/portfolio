@@ -106,22 +106,27 @@ const Hero = () => {
                 proficient in crafting dynamic and visually captivating
                 websites.
               </motion.h1>
-              <motion.div
-                className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.8,
-                  duration: 0.5,
-                  type: "spring",
-                  stiffness: 150,
-                }}
+              <a
+                href="https://drive.google.com/file/d/1yKXPafCVuka2dV7_i5uB3MZtJc_oIrnq/view?usp=sharing"
+                target="_blank"
               >
-                <GoDownload className="text-white" />
-                <span className="text-white josefin-sans-font mt-1">
-                  Download CV
-                </span>
-              </motion.div>
+                <motion.div
+                  className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 150,
+                  }}
+                >
+                  <GoDownload className="text-white" />
+                  <span className="text-white josefin-sans-font mt-1">
+                    Download CV
+                  </span>
+                </motion.div>
+              </a>
             </div>
           </div>
         </div>
