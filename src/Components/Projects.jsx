@@ -165,30 +165,30 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Food App
+              Recipe Radar
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              A Food App Frontend, a React-based web application that provides
-              users with a seamless experience to browse food from various
-              restaurants. The app fetches live data from Swiggy's API, ensuring
-              that users always have up-to-date information on available
-              restaurants, menus, and promotions.
+              A dynamic and responsive Recipe App built using ReactJS that
+              allows users to explore a wide variety of recipes, search by
+              categories, and view detailed recipe instructions. The app
+              integrates API calls to fetch real-time data and provides a smooth
+              user experience with Shimmer UI for loading states.
             </p>
             <div className="flex gap-6 mt-9 text-3xl md:justify-end">
               <a
-                href="https://github.com/LakshitAgarwal/Food-App"
+                href="https://github.com/LakshitAgarwal/RecipeRadar"
                 target="_blank"
               >
                 <FaGithub />
+              </a>
+              <a href="https://recipe-radar-gamma.vercel.app/" target="_blank">
+                <IoGlobeOutline />
               </a>
             </div>
           </div>
           {/* img */}
           <div className="md:w-[30%] w-[90%] mb-10 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
-            <a
-              href="https://github.com/LakshitAgarwal/Food-App"
-              target="_blank"
-            >
+            <a href="https://recipe-radar-gamma.vercel.app/" target="_blank">
               <img
                 src="/food.png"
                 alt="Project Screenshot"
