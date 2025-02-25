@@ -2,6 +2,13 @@
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experience. It is built using modern web development tools like React, Tailwind CSS, Framer Motion for animations, and Hash Router for smooth navigation.
 
+# Demo
+
+
+https://github.com/user-attachments/assets/1b80572b-94f4-4304-9d33-1ec46cd86602
+
+
+
 ## Tech Stack
 
 - **React**: A JavaScript library for building user interfaces.
