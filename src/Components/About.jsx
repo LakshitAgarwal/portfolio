@@ -29,7 +29,7 @@ const About = () => {
         >
           <div className="m-8 md:text-lg">
             <p className="text-white/80 md:w-[90%]">
-              I am a passionate frontend developer and UI/UX designer, currently
+              I am a passionate full-stack developer and UI/UX designer, currently
               a B.Tech third-year student, with a knack for building visually
               appealing and user-friendly web applications. I enjoy creating
               interactive and functional user interfaces, and my background in
