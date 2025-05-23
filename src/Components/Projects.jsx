@@ -14,42 +14,38 @@ const Projects = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
-          className="relative flex flex-col-reverse md:flex-row items-center justify-center md:mt-20 mt-16 md:space-x-16"
+          className="relative flex flex-col-reverse md:flex-row items-center justify-center mt-20 md:space-x-16"
         >
           {/* content */}
-          <div className="text-white w-[85%] md:w-[40%]">
+          <div className="text-white w-[85%] mt-10 md:w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              CineBot
+              Yapp
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              CineBot is a web application designed to provide users with
-              personalized movie recommendations, a seamless browsing
-              experience, and detailed information about their favorite movies.
-              The platform leverages AI to suggest movies based on user input,
-              offering a tailored cinematic experience.
+              A real-time full-stack web application built using the MERN stack,
+              integrated with WebSockets for live communication, Zustand for
+              state management, and secure JWT authentication using HTTP-only
+              cookies.
             </p>
             <div className="flex gap-6 mt-9 text-3xl">
-              <a
-                href="https://github.com/LakshitAgarwal/CineBot"
-                target="_blank"
-              >
+              <a href="https://github.com/LakshitAgarwal/Yapp" target="_blank">
                 <FaGithub />
               </a>
-              <a href="https://cinebot.netlify.app/" target="_blank">
+              <a href="https://app.socialmorph.co/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
           </div>
           {/* img */}
-          <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 md:relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
-            <a href="https://github.com/LakshitAgarwal/CineBot" target="_blank">
+          <div className="md:w-[30%] w-[85%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+            <a href="https://app.socialmorph.co/" target="_blank">
               <img
-                src="/ssMovie.png"
+                src="/yapp-ss.png"
                 alt="Project Screenshot"
                 className="rounded-lg"
               />
@@ -92,10 +88,7 @@ const Projects = () => {
           </div>
           {/* img */}
           <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
-            <a
-              href="https://github.com/LakshitAgarwal/Freedemy"
-              target="_blank"
-            >
+            <a href="https://freedemy.onrender.com/" target="_blank">
               <img
                 src="/freedemy.png"
                 alt="Project Screenshot"
@@ -107,45 +100,42 @@ const Projects = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative flex flex-col-reverse md:flex-row items-center justify-center mt-20 md:space-x-16"
+          className="relative flex flex-col-reverse md:flex-row items-center justify-center md:mt-20 mt-16 md:space-x-16"
         >
           {/* content */}
-          <div className="text-white w-[85%] mt-10 md:w-[40%]">
+          <div className="text-white w-[85%] md:w-[40%]">
             <h1 className="text-sm text-purple-600 font-semibold">
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Fitness Life Gym
+              CineBot
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              This is a sleek and responsive website developed using React for
-              dynamic functionality and styled with Tailwind CSS for a clean and
-              modern look. Animations using Framer Motion, enhancing user
-              interaction and creating a smooth, engaging experience across all
-              devices.
+              CineBot is a web application designed to provide users with
+              personalized movie recommendations, a seamless browsing
+              experience, and detailed information about their favorite movies.
+              The platform leverages AI to suggest movies based on user input,
+              offering a tailored cinematic experience.
             </p>
             <div className="flex gap-6 mt-9 text-3xl">
               <a
-                href="https://github.com/LakshitAgarwal/gym-react-app"
+                href="https://github.com/LakshitAgarwal/CineBot"
                 target="_blank"
               >
                 <FaGithub />
               </a>
-              <a href="https://fitnesslifegym.netlify.app/" target="_blank">
+              <a href="https://cinebot.netlify.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
           </div>
           {/* img */}
-          <div className="md:w-[30%] w-[85%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
-            <a
-              href="https://github.com/LakshitAgarwal/gym-react-app"
-              target="_blank"
-            >
+          <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 md:relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+            <a href="https://cinebot.netlify.app/" target="_blank">
               <img
-                src="/fit.png"
+                src="/ssMovie.png"
                 alt="Project Screenshot"
                 className="rounded-lg"
               />
