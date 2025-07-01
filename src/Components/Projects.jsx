@@ -12,6 +12,55 @@ const Projects = () => {
       </div>
       <div>
         <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="relative flex md:flex-row-reverse flex-col-reverse items-center space-x-reverse justify-center mt-20 md:gap-16 "
+        >
+          {/* content */}
+          <div className="text-white w-[85%] md:w-[40%] md:text-right">
+            <h1 className="text-sm text-purple-600 font-semibold">
+              Featured Project
+            </h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              Readme.ai
+            </h1>
+            <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
+              This project auto-generates a comprehensive and customizable
+              README file by analyzing a software project&apos;s codebase. It
+              provides detailed technical insights, setup instructions, and
+              feature descriptions using customizable templates. Built with
+              Next.js, Express, and Langchain, it leverages both frontend and
+              backend technologies for seamless integration.
+            </p>
+            <div className="flex gap-6 mt-9 text-3xl md:justify-end">
+              <a
+                href="https://github.com/LakshitAgarwal/Readme-Generator"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://readme-generator-phi.vercel.app/"
+                target="_blank"
+              >
+                <IoGlobeOutline />
+              </a>
+            </div>
+          </div>
+          {/* img */}
+          <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+            <a href="https://readme-generator-phi.vercel.app/" target="_blank">
+              <img
+                src="/readme_ss.png"
+                alt="Project Screenshot"
+                className="rounded-lg"
+              />
+            </a>
+          </div>
+        </motion.div>
+        <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -136,51 +185,6 @@ const Projects = () => {
             <a href="https://cinebot.netlify.app/" target="_blank">
               <img
                 src="/ssMovie.png"
-                alt="Project Screenshot"
-                className="rounded-lg"
-              />
-            </a>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="relative flex md:flex-row-reverse flex-col-reverse items-center space-x-reverse justify-center mt-20 md:gap-16"
-        >
-          {/* content */}
-          <div className="text-white w-[85%] md:w-[40%] md:text-right">
-            <h1 className="text-sm text-purple-600 font-semibold">
-              Featured Project
-            </h1>
-            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Recipe Radar
-            </h1>
-            <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              A dynamic and responsive Recipe App built using ReactJS that
-              allows users to explore a wide variety of recipes, search by
-              categories, and view detailed recipe instructions. The app
-              integrates API calls to fetch real-time data and provides a smooth
-              user experience with Shimmer UI for loading states.
-            </p>
-            <div className="flex gap-6 mt-9 text-3xl md:justify-end">
-              <a
-                href="https://github.com/LakshitAgarwal/RecipeRadar"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
-              <a href="https://recipe-radar-gamma.vercel.app/" target="_blank">
-                <IoGlobeOutline />
-              </a>
-            </div>
-          </div>
-          {/* img */}
-          <div className="md:w-[30%] w-[90%] mb-10 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
-            <a href="https://recipe-radar-gamma.vercel.app/" target="_blank">
-              <img
-                src="/food.png"
                 alt="Project Screenshot"
                 className="rounded-lg"
               />
