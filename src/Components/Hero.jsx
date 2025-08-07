@@ -107,7 +107,7 @@ const Hero = () => {
                 websites.
               </motion.h1>
               <a
-                href="https://drive.google.com/file/d/1x6LYQ0XOfuLd7FCMHijK1CTF9L-SPWnw/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kT24JGk6kG_QIeucmLhefmy1z-TuvD3v/view?usp=drivesdk"
                 target="_blank"
               >
                 <motion.div
